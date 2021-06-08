@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import Linia from "./components/Linia";
+import Linia from "./components/linia/Linia";
 import obraTeatre from "./obraTeatre";
+import {GlobalStyle} from "./styled";
+import {ContenidorLinies} from "./components/linia/Linia.styled"
 
 /*
 function App() {
@@ -20,9 +22,11 @@ export default App;
 //En ES6
 const App = () => {
   return (
-    <div className="App">
+    <ContenidorLinies className="Contenidor">
+      <GlobalStyle/>
       {obraTeatre.map((Line,index) => <Linia key={index} dades={Line}/> )}
-    </div>
+      
+    </ContenidorLinies>
   );  
 }
 

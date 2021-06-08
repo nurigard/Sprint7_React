@@ -11,9 +11,12 @@ function Linia(props){
 export default Linia;
 */
 
+import { DivLinia } from "../../components/linia/Linia.styled";
+
 
 
 // En ES6
-const Linia = ({dades}) => <div>{dades}</div>;
+
+const Linia = ({dades}) => <DivLinia>{dades}</DivLinia>;
 
 export default Linia;
